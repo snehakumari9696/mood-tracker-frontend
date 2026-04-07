@@ -22,7 +22,7 @@ const handleAddMood =async(mood: string, note:string)=> {
     try{
         await addMood(mood,note)
         const updated=await getMoods()
-        setEntries(updated)
+        setEntries(updatedn)
         console.log("Mood Saved Successfully")
         }catch(error){
             console.error("Failed to save mood", error)}}

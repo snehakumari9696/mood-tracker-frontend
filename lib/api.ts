@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080/api/moods";
+const BASE_URL = "https://mood-tracker-backend-ok3r.onrender.com/api/moods";
 
 // Fetch all moods
 export async function getMoods() {
