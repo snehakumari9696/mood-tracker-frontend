@@ -21,6 +21,8 @@ export async function addMood(mood: string, note: string) {
     body: JSON.stringify({ mood, note }),
   });
 
+  await fetchMoods();
+
   if (!res.ok) {
     throw new Error("Failed to save mood");
   }
